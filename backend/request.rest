@@ -1,0 +1,28 @@
+GET http://localhost:5000/Users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJBSE1BRCBTSE9MRUgiLCJlbWFpbCI6ImFobWFkc2hvbGVocG9uZG9raXRAZ21haWwuY29tIiwiaWF0IjoxNzMyMTQ5ODE4LCJleHAiOjE3MzIxNDk4MzN9.I7_3D2ZI7VWUiWglX6YAG8x6iPyJt4spa6tkufWAzrA
+    
+###
+POST http://localhost:5000/Users
+Content-Type: application/json
+
+{
+    "name" : "AHMAD SHOLEH f",
+    "email" : "ahmadsholehpondokit2@gmail.com",
+    "password" : "1234567",
+    "confirmPassword" : "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "ahmadsholehpondokit@gmail.com",
+    "password" : "123456"   
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
